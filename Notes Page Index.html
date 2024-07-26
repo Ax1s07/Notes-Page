@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Notes Page</h1>
+            <div class="clock" id="clock"></div>
+            <div class="field">
+                <div class="control">
+                    <textarea id="diary-entry" class="textarea" placeholder="Write your note here..." spellcheck="true"></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped is-grouped-centered">
+                <div class="control">
+                    <button class="button is-primary" onclick="addBoldText()">Bold</button>
+                </div>
+                <div class="control">
+                    <button class="button is-primary" onclick="addEntry()">Add Note</button>
+                </div>
+            </div>
+            <div class="entries" id="entries">
+                <!-- Entries will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
